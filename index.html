@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <p>Voici une suite de nombres :</p>
+    <ul>
+      <li>0</li>
+      <li>1</li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>5</li>
+      <li>8</li>
+      <li>13</li>
+      <li>21</li>
+      <li>34</li>
+      <li>...</li>
+    </ul>
+    <h2>Exercice</h2>
+    <ol>
+      <li>
+        Remarques que chaque nombre dans la suite est la somme des deux nombres
+        précédents. Autrement dit, si on veut obtenir le n-ième nombre de la
+        suite, il faut faire la somme des deux précédents : (n-1) et (n-2).
+      </li>
+      <li>
+        Traduire ce pseudo code en js (fibo.js) :
+
+        <pre>
+Fonction Fibonacci(n: entier): entier;
+        
+Debut
+    Délarer une variable "résultat" qui sera un entier;
+
+    Si(n = 0) Alors
+        résultat := 0;
+    Sinon Si(n = 1) Alors
+        résultat := 1;
+    Sinon
+        résultat := Fibonacci(n - 1) + Fibonacci(n - 2);
+    FinSi
+      
+    Renvoyer résultat;
+Fin
+              </pre
+        >
+      </li>
+      <li>
+        S'assurer que les tests passent. Et écrire un nouveau test avec la
+        valeur 50.
+      </li>
+    </ol>
+  </body>
+</html>
